@@ -1,0 +1,9 @@
+.left_menu_container {
+    margin-top: 2%;
+    height: 10%;
+    width :15%;
+    position: sticky;
+    background-color: white;
+    top: 75px;
+    border-radius: 5%;
+}

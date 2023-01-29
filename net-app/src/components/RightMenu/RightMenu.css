@@ -1,0 +1,26 @@
+.right_menu_container {
+    width: 250px;
+    background-color: rgb(231, 230, 230);
+    border-radius: 12px;
+    padding: 1% 2% 2% 1%; 
+    margin-top: 2%;
+    height: 400px;
+     position: sticky; 
+    top: 75px;
+}
+
+.right_menu_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.right_menu_news_title {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .right_menu_container {
+        display: none;
+    }
+}
