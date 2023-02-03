@@ -5,20 +5,16 @@ import Navbar from './components/Navbar/Navbar';
 import Homepage from './pages/Homepage';
 import UserDetails from './components/LeftMenu/UserDetails/UserDetails';
 import Recents from './components/LeftMenu/Recents/Recents';
+import AboutUs from './pages/About Us/AboutUs';
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      {/* <Routes>
-        <Route exact path="/" element={<Homepage/>}/>
-      </Routes>
-       */}
-       {/* <UserDetails/> */}
-       {/* <LeftMenu/> */}
+       <Navbar/>
+      
        <Homepage/>
-       
+        {/* <AboutUs/>  */}
        
     </div>
   );

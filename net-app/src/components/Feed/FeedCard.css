@@ -1,0 +1,29 @@
+.feed_card_container {
+    background-color: rgb(231, 230, 230);
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.feed_card_title {
+    display: flex;
+    align-items: center;
+}
+
+.feed_card_title_text {
+    margin-left: 15px;
+}
+
+.feed_card_title_text_name {
+    font-weight: 700;
+}
+
+.feed_card_title_text_username {
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: 5px;
+}
+
+.tags {
+    display: flex;
+}
