@@ -7,14 +7,24 @@ import UserDetails from './components/LeftMenu/UserDetails/UserDetails';
 import Recents from './components/LeftMenu/Recents/Recents';
 import AboutUs from './pages/About Us/AboutUs';
 
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+
 
 function App() {
   return (
     <div className="App">
-       <Navbar/>
+       
       
-       <Homepage/>
+       {/* <Homepage/> */} 
         {/* <AboutUs/>  */}
+        <BrowserRouter>
+        <Navbar/>
+        <Routes>
+              <Route exact path="/" element={<Homepage />} />
+              <Route exact path="/about" element={<AboutUs />} />
+        </Routes>
+        </BrowserRouter>
+        
        
     </div>
   );

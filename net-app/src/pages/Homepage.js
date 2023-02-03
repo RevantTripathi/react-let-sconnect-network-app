@@ -4,6 +4,7 @@ import LeftMenu from "./../components/LeftMenu/LeftMenu";
  import RightMenu from "./../components/RightMenu/RightMenu";
 import Feed from "./../components/Feed/Feed";
 
+
 function Homepage() {
   return (
     <div className="homepage_container">
