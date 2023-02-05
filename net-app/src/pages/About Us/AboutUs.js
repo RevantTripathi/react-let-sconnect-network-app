@@ -15,7 +15,7 @@ function AboutUs() {
     </p>
     </div>
 
-    <button className="go_home_bt"><Link to="/">GoTo Home</Link></button>
+    <button className="go_home_bt" onClick={() => navigate("/")}>GoTo Home</button>
   </div>
   </>
   
