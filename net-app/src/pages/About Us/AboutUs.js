@@ -1,8 +1,9 @@
 import React from "react";
 import "./AboutUs.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 function AboutUs() {
+  const navigate =useNavigate(); 
   return (
   <>
   <div className="container">
