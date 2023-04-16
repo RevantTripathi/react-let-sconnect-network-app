@@ -1,0 +1,82 @@
+.form-container2 {
+    background-color: #F7F7F7;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    width: 25vw;
+    height: 60vh;
+    box-shadow: 0 0 3px rgb(118, 115, 115);
+    min-width: 300px;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.form-seg2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-top: 20px;
+}
+
+.form-seg2 label {
+    font-size: larger;
+    color: #0047ab;
+}
+
+.form-seg2 input {
+    border: 1px solid #6162638d;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+
+.submit-btn2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: none;
+    margin-top: 5%;
+    border-radius: 5px;
+    color: white;
+    background-color: #0047ab;
+}
+
+em:hover {
+    color: #0047ab;
+    cursor: pointer;
+}
+
+.form2 h1 {
+    text-decoration: none;
+    font-weight: 1000;
+    color: #0047ab;
+}
+
+.login-bt{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5%;
+    color: #0047ab;
+    background-color: white;
+}
+
+

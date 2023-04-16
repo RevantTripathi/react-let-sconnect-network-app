@@ -8,6 +8,8 @@ import Recents from './components/LeftMenu/Recents/Recents';
 import AboutUs from './pages/About Us/AboutUs';
 
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Login from './pages/LoginPage/LoginPage.js';
+import Regi from './pages/Registration Page/RegiPage.js';
 
 
 function App() {
@@ -17,13 +19,15 @@ function App() {
       
        {/* <Homepage/> */} 
         {/* <AboutUs/>  */}
-        <BrowserRouter>
+        {/* <BrowserRouter>
         <Navbar/>
         <Routes>
               <Route exact path="/" element={<Homepage />} />
               <Route exact path="/about" element={<AboutUs />} />
         </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
+        {/* <Login/>  */}
+        <Regi/> 
         
        
     </div>
