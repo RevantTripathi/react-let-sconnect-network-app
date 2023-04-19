@@ -17,17 +17,17 @@ function App() {
     <div className="App">
        
       
-       {/* <Homepage/> */} 
-        {/* <AboutUs/>  */}
-        {/* <BrowserRouter>
+       {/* <Homepage/>  */}
+        {/* <AboutUs/> */}
+        <BrowserRouter>
         <Navbar/>
         <Routes>
               <Route exact path="/" element={<Homepage />} />
               <Route exact path="/about" element={<AboutUs />} />
         </Routes>
-        </BrowserRouter> */}
+        </BrowserRouter>
         {/* <Login/>  */}
-        <Regi/> 
+        {/* <Regi/>  */}
         
        
     </div>

@@ -27,3 +27,14 @@
 .tags {
     display: flex;
 }
+
+.icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.icons>p {
+    margin-left: 6px;
+}

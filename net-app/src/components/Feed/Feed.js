@@ -1,33 +1,9 @@
-// import React from 'react'
-// import "./Feed.css"
-// import Feedcard from"./FeedCard";
 
-
-
-// const Feed= () => {
-//     return(
-//         <>
-//         <div className='feed_container'>
-//             <div className='feed_add'>
-//                 <div className='feed_add_input'>
-//                 <input/>
-//                 <button>Add</button>
-//                 </div>
-                
-//                 <p>Add Photo</p>
-//             </div>
-//             <Feedcard />
-//         </div>
-//         </>
-//     );
-// }
-
-// export default Feed;
-
-// import { Api } from "@mui/icons-material";
 import React, { useState, useEffect } from "react";
 import "./Feed.css";
 import FeedCard from "./FeedCard";
+
+
 import axios from "axios";
 
 function Feed() {
@@ -39,7 +15,7 @@ function Feed() {
     // async and await api call ;
     // error handling
     try {
-    const response = await fetch("https://dummyjson.com/posts");
+      const response = await fetch("https://dummyjson.com/posts");
       const data = await response.json();
       console.log(data.posts);
       setPosts(data.posts);
@@ -68,7 +44,7 @@ function Feed() {
     //     setPosts(data.posts);
     //   })
     //   .catch((e) => console.log(e));
-}
+  }
 
 
 
@@ -82,9 +58,10 @@ function Feed() {
       userId: 10,
       id: posts.length + 1,
       name: "Revant",
-      tags: ["HTML", "CSS","React"],
+      tags: ["HTML", "CSS", "React"],
       body: input,
       image: imageUrl,
+      likeCount:0,
     });
     setPosts(copyArray);
     setInput("");
@@ -95,19 +72,19 @@ function Feed() {
     <div className="feed_container">
       <div className="feed_add">
         <div className="feed_add_input">
-          
-            <input
-              type="text"
-              value={input}
-              placeholder="Write something..."
-              onChange={(event) => setInput(event.target.value)}
-            />
-          
+
+          <input
+            type="text"
+            value={input}
+            placeholder="Write something..."
+            onChange={(event) => setInput(event.target.value)}
+          />
+
 
           <button onClick={addPosts}>Add</button>
         </div>
 
-         <button className="feed_add_photo">Add Photo</button> 
+        <button className="feed_add_photo">Add Photo</button>
       </div>
 
       {posts?.map((value) => (
@@ -121,6 +98,8 @@ function Feed() {
         />
       ))}
     </div>
+
+    
   );
 }
 
