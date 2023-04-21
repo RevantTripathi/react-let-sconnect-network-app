@@ -16,7 +16,7 @@ function Navbar(){
             </div>
 
             <div className='navbar_right'>
-                <p>HI,NAME</p>
+                <p>HI,REVANT</p>
                 <p onClick={() => navigate("/")}>HOME</p>
                 <p onClick={() => navigate("/about")}>ABOUT US</p>
                 {/* <p>ABOUT US</p> */}

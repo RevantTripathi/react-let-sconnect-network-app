@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
+    box-shadow: 0 0 100px black;
     
 }
 

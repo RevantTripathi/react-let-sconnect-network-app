@@ -12,8 +12,7 @@ function Feed() {
   const [imageUrl, setImageUrl] = useState("");
 
   async function getPosts() {
-    // async and await api call ;
-    // error handling
+    
     try {
       const response = await fetch("https://dummyjson.com/posts");
       const data = await response.json();
@@ -23,27 +22,6 @@ function Feed() {
       console.log(error);
     }
 
-    // promise with error handling
-    // fetch("https://dummyjson.com/posts")
-    //   .then((response) => {
-    //     response.json();
-    //   })
-    //   .then((data) => {
-    //     console.log("response", data);
-    //     setPosts(data.posts);
-    //   })
-    //   .catch((e) => console.log(e));
-
-    // axios
-    //   .get("https://dummyjson.com/posts")
-    //   .then((response) => {
-    //     response.json();
-    //   })
-    //   .then((data) => {
-    //     console.log("response", data);
-    //     setPosts(data.posts);
-    //   })
-    //   .catch((e) => console.log(e));
   }
 
 

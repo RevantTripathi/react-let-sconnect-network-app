@@ -1,0 +1,27 @@
+.user_details{
+    background-color: #F7F7F7;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 230, 230)
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.user_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    width: 25vw;
+    /* height: 60vh; */
+    box-shadow: 0 0 3px rgb(118, 115, 115);
+    min-width: 300px;
+    margin: 0;
+    border-radius: 20px;
+
+}
