@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import Recents from "../Recents/Recents";
 import "./UserDetails.css";
+import { UserContext } from "../../../App";
 
 
 function UserDetails() {
+
+  const user=useContext(UserContext)
   return (
     <div className="user_details_container">
       <div className="user_details_background_image">
         <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
       </div>
       <div className="user_details_div">
-        <p className="user_details_div_title">Revant Tripathi</p>
-        <p>revanttripathi8@gmail.com</p>
+        <p className="user_details_div_title">{user.name}</p>
+        <p>{user.email}</p>
       </div>
       <hr />
       <div>

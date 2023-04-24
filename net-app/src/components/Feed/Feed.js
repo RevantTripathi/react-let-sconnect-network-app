@@ -1,12 +1,16 @@
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Feed.css";
 import FeedCard from "./FeedCard";
 
 
 import axios from "axios";
+import { UserContext } from "../../App";
 
 function Feed() {
+
+  const user=useContext(UserContext)
+
   const [posts, setPosts] = useState([]);
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -14,10 +18,13 @@ function Feed() {
   async function getPosts() {
     
     try {
-      const response = await fetch("https://dummyjson.com/posts");
-      const data = await response.json();
-      console.log(data.posts);
-      setPosts(data.posts);
+      // const response = await fetch("https://dummyjson.com/posts");
+      // const data = await response.json();
+      // console.log(data.posts);
+      // setPosts(data.posts);
+      let {data}=await axios.get('http://localhost:4000/posts')
+      console.log(data)
+      setPosts(data)
     } catch (error) {
       console.log(error);
     }
@@ -30,18 +37,23 @@ function Feed() {
     getPosts();
   }, []);
 
-  function addPosts() {
-    const copyArray = [...posts];
-    copyArray.unshift({
-      userId: 10,
-      id: posts.length + 1,
-      name: "Revant",
-      tags: ["HTML", "CSS", "React"],
-      body: input,
-      image: imageUrl,
-      likeCount:0,
-    });
-    setPosts(copyArray);
+   async function addPosts() {
+    // const copyArray = [...posts];
+    // copyArray.unshift({
+    //   userId: 10,
+    //   id: posts.length + 1,
+    //   name: "Revant",
+    //   tags: ["HTML", "CSS", "React"],
+    //   body: input,
+    //   image: imageUrl,
+    //   likeCount:0,
+    // });
+    try{
+      await axios.post('http://localhost:4000/posts',{user:user.id,data:input,likes:0})
+    }catch(err){
+      console.log(err)
+    }
+    getPosts();
     setInput("");
     setImageUrl("");
   }
@@ -62,17 +74,17 @@ function Feed() {
           <button onClick={addPosts}>Add</button>
         </div>
 
-        <button className="feed_add_photo">Add Photo</button>
+        {/* <button className="feed_add_photo">Add Photo</button> */}
       </div>
 
       {posts?.map((value) => (
         <FeedCard
-          id={value.id}
-          image={value.image}
+        getPosts={getPosts}
+          id={value._id}
           name={value.name}
-          tags={value.tags}
-          message={value.body}
-          likeCount={value.reactions}
+          username={value.username}
+          message={value.data}
+          likeCount={value.likes}
         />
       ))}
     </div>

@@ -3,11 +3,11 @@ import "./AboutUs.css";
 import { Link,useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 
-function AboutUs() {
+function AboutUs({setLogin}) {
   const navigate =useNavigate(); 
   return (
   <>
-  <Navbar/>
+  <Navbar setLogin={setLogin}/>
   <div className="container">
     <p className="title">About Us</p>
     <div className="about_para">

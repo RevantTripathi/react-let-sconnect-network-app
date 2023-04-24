@@ -1,9 +1,11 @@
-import React  from 'react'
+import React, { useContext }  from 'react'
 import "./Navbar.css"
 import { Link, useNavigate } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 
-function Navbar(){
+function Navbar({setLogin}){
+    const user=useContext(UserContext)
 
     const navigate =useNavigate();   
     return(
@@ -16,13 +18,13 @@ function Navbar(){
             </div>
 
             <div className='navbar_right'>
-                <p>HI,REVANT</p>
+                <p>HI,{user.name}</p>
                 <p onClick={() => navigate("/")}>HOME</p>
                 <p onClick={() => navigate("/about")}>ABOUT US</p>
                 {/* <p>ABOUT US</p> */}
                 <p onClick={() => navigate("/profile")}>PROFILE</p>
-                <p>DARK MODE</p>
-                <button className='logbt' onClick={() => navigate("/login")}>LogOut</button>
+                {/* <p>DARK MODE</p> */}
+                <button className='logbt' onClick={() => {setLogin(false);navigate("/")}}>LogOut</button>
             </div>
         </div>
         </div>

@@ -45,6 +45,12 @@
     padding: 4px 8px;
     border-radius: 2px;
 }
+.form-seg2 select {
+    border: 1px solid #6162638d;
+    padding: 4px 8px;
+    border-radius: 2px;
+    margin-right: 27%;
+}
 
 .submit-btn2 {
     font-size: 18px;
