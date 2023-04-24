@@ -2,7 +2,7 @@
     width: 100%;
     border-radius: 4%;
     background-color: rgb(231, 230, 230);
-    
+    box-shadow: 8px 8px 15px #020202;
     border: 1px solid lightgray;
     height: 20%;
 }

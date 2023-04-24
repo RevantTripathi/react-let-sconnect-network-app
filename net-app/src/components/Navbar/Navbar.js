@@ -20,9 +20,9 @@ function Navbar(){
                 <p onClick={() => navigate("/")}>HOME</p>
                 <p onClick={() => navigate("/about")}>ABOUT US</p>
                 {/* <p>ABOUT US</p> */}
-                <p>PROFILE</p>
+                <p onClick={() => navigate("/profile")}>PROFILE</p>
                 <p>DARK MODE</p>
-                <button className='logbt'>LogOut</button>
+                <button className='logbt' onClick={() => navigate("/login")}>LogOut</button>
             </div>
         </div>
         </div>

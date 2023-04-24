@@ -4,10 +4,11 @@
     border-radius: 12px;
     padding: 1% 2% 2% 1%; 
     margin-top: 2%;
-    height: 400px;
+    height: 600px;
      position: sticky; 
     top: 75px;
-    border: 1px solid lightgray;
+    border: 3px solid lightgray;
+    box-shadow: 8px 8px 15px #020202;
 }
 
 .right_menu_title {

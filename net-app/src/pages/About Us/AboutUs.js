@@ -1,11 +1,13 @@
 import React from "react";
 import "./AboutUs.css";
 import { Link,useNavigate } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
 
 function AboutUs() {
   const navigate =useNavigate(); 
   return (
   <>
+  <Navbar/>
   <div className="container">
     <p className="title">About Us</p>
     <div className="about_para">

@@ -18,6 +18,7 @@
 .feed_add_input {
     display: flex;
     align-items: center;
+    
     padding-top: 20px;
     border-radius: 12px;
     width: 100%;
@@ -38,13 +39,23 @@
     margin-bottom: 3%;
 }
 
-.feed_add_input>button,
-.feed_add_photo {
+.feed_add_input>button{
     border: none;
-    background-color: white;
+    background-color:#0047ab;
     font-size: 16px;
     cursor: pointer;
-    color: #0047ab;
+    color: white;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+
+.feed_add_photo {
+    border: none;
+    background-color:white;
+    font-size: 16px;
+    cursor: pointer;
+    color:#0047ab ;
     font-weight: 600;
 }
 

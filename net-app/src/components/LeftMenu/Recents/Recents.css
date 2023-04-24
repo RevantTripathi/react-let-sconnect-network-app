@@ -1,10 +1,11 @@
 .recents_container{
     background-color: rgb(231, 230, 230);
     padding: 2% ;
-    margin-top: 5%;
+    margin-top: 10%;
     border-radius: 5%;
     text-align: left;
     border: 1px solid lightgray;
+    box-shadow: 8px 8px 15px #020202;
 }
 
 .recents_title{

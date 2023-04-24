@@ -19,16 +19,21 @@ function App() {
        
       
       
-        {/* <BrowserRouter>
-        <Navbar/>
+        <BrowserRouter>
+        
         <Routes>
               <Route exact path="/" element={<Homepage />} />
               <Route exact path="/about" element={<AboutUs />} />
+              <Route exact path="/profile" element={<Profile/>} />
+              <Route exact path="/login" element={<Login/>}/> 
+              
         </Routes>
-        </BrowserRouter> */}
+        </BrowserRouter>
+        
+        {/* <Route exact path="/login" element={<Element/>}/> */}
         {/* <Login/>  */}
         {/* <Regi/>  */}
-        <Profile/>
+        {/* <Profile/> */}
         
        
     </div>
