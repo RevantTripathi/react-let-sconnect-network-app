@@ -34,7 +34,7 @@ const  Recents = () => {
     return(
         <>
         <div className='recents_container'>
-            <p className='recents_title'>Recents</p>
+            <p className='recents_title'>Hashtags</p>
             <div className='recents_tags_container'>
                 {data.map((value) => (
                     <p>#{value.tag}</p>

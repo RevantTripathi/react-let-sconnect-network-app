@@ -59,9 +59,11 @@ const RightMenu= () => {
             <p className='righ_menu_title'>Pro Network News</p>
                 <ul>
                     {news.map((value) => (
-                        <li className="right_menu_news_title">
+                       <a href={value.link} target='/blank'> <li className="right_menu_news_title">
                             {value.title.slice(0, 25)}...
                         </li>
+                        </a>
+                        
                     ))}
                 </ul>
             </div>

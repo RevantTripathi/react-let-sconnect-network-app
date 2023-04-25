@@ -8,6 +8,7 @@ import CommentOutlinedIcon from "@mui/icons-material/CommentOutlined";
 import TurnedInNotOutlinedIcon from "@mui/icons-material/TurnedInNotOutlined";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import { useNavigate } from "react-router-dom";
+import PersonIcon from '@mui/icons-material/Person';
 
 function FeedCard({ getPosts, id, username, name, message, likeCount }) {
 
@@ -39,8 +40,9 @@ function FeedCard({ getPosts, id, username, name, message, likeCount }) {
   return (
     <div className="feed_card_container">
       <div className="feed_card_title">
-        <div>
+        <div className="name_dis">
           {/* <Avatar alt={name} src={image} /> */}
+          <PersonIcon/>
           <h4>{username}</h4>
         </div>
         <div className="feed_card_title_text">

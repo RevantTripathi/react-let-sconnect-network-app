@@ -18,7 +18,7 @@ function Navbar({setLogin}){
             </div>
 
             <div className='navbar_right'>
-                <p>HI,{user.name}</p>
+                <p>Hi,{user.name}</p>
                 <p onClick={() => navigate("/")}>HOME</p>
                 <p onClick={() => navigate("/about")}>ABOUT US</p>
                 {/* <p>ABOUT US</p> */}

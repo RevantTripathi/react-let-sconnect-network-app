@@ -18,14 +18,14 @@ function UserDetails() {
       </div>
       <hr />
       <div>
-        <div className="user_details_stats">
+        {/* <div className="user_details_stats">
           <p>Who viewed you?</p>
           <p className="user_details_stats_highlight">2,300</p>
         </div>
         <div className="user_details_stats">
           <p>Views on post</p>
           <p className="user_details_stats_highlight">2,570</p>
-        </div>
+        </div> */}
       </div>
       {/* <Recents/> */}
     </div>
