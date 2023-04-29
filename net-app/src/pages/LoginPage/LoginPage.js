@@ -46,7 +46,7 @@ const Login=({setLogin,setUser})=>{
         const password=document.getElementById('password').value
         let result=null
         try{
-            result= await axios.get('http://localhost:4000/users',{params:{email:email,password:password}})
+            result= await axios.get('https://letsconnectbackend-production.up.railway.app/users',{params:{email:email,password:password}})
             console.log(result.data)
             if(result.data.password===password){
                 alert('login successful!')

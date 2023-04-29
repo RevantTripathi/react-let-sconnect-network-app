@@ -17,7 +17,7 @@ const Profile = ({ setLogin }) => {
             // const data = await response.json();
             // console.log(data.posts);
             // setPosts(data.posts);
-            let { data } = await axios.get('http://localhost:4000/posts')
+            let { data } = await axios.get('https://letsconnectbackend-production.up.railway.app/posts')
             console.log(data)
             setPosts(data)
         } catch (error) {
@@ -38,7 +38,7 @@ const Profile = ({ setLogin }) => {
 
             <div className='user_details'>
                 <div className='user_box'>
-                    <div className="icons_p"><PersonIcon/></div>
+                    <div className="icons_p"><PersonIcon /></div>
                     <div className="details">
                         <p>User Name</p>
                         <p> {user.name}</p>

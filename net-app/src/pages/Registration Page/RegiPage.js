@@ -31,7 +31,7 @@ const Regi = () => {
 
 
         try {
-            axios.post('http://localhost:4000/users', { username: name.current.value, email: email.current.value, contact: contact.current.value, password: password.current.value, gender: gender.current.value }).then((res) => {
+            axios.post('https://letsconnectbackend-production.up.railway.app/users', { username: name.current.value, email: email.current.value, contact: contact.current.value, password: password.current.value, gender: gender.current.value }).then((res) => {
                 console.log(res.data)
                 resetInput()
             })

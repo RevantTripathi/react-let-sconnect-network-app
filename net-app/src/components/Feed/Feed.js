@@ -22,7 +22,7 @@ function Feed() {
       // const data = await response.json();
       // console.log(data.posts);
       // setPosts(data.posts);
-      let {data}=await axios.get('http://localhost:4000/posts')
+      let {data}=await axios.get('https://letsconnectbackend-production.up.railway.app/posts')
       console.log(data)
       setPosts(data)
     } catch (error) {
