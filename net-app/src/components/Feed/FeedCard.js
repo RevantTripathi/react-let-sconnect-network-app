@@ -29,7 +29,7 @@ function FeedCard({ getPosts, id, username, name, message, likeCount }) {
       likeCount+=1
       setIsLiked(true);
       try {
-        await axios.patch('http://localhost:4000/posts', { id: id, likes: likeCount  })
+        await axios.patch('https://letsconnectbackend-production.up.railway.app/posts', { id: id, likes: likeCount  })
       } catch (err) {
         console.log(err)
       }
