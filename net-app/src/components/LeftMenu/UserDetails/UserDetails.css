@@ -1,10 +1,11 @@
 .user_details_container {
     width: 100%;
     border-radius: 4%;
-    background-color: rgb(231, 230, 230);
+    background-color: black;
     box-shadow: 8px 8px 15px #020202;
     border: 1px solid lightgray;
     height: 20%;
+    /* rgb(231, 230, 230) */
 }
 
 .user_details_background_image>img {
