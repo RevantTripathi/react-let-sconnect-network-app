@@ -49,7 +49,7 @@ function Feed() {
     //   likeCount:0,
     // });
     try{
-      await axios.post('http://localhost:4000/posts',{user:user.id,data:input,likes:0})
+      await axios.post('https://letsconnectbackend-production.up.railway.app/posts',{user:user.id,data:input,likes:0})
     }catch(err){
       console.log(err)
     }
@@ -57,6 +57,7 @@ function Feed() {
     setInput("");
     setImageUrl("");
   }
+  //http://localhost:4000/posts
 
   return (
     <div className="feed_container">
