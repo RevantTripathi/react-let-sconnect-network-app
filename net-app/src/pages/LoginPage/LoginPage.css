@@ -9,11 +9,11 @@
     /* background-image: url(./logo-blue.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    background: rgb(20,17,64);
-background: radial-gradient(circle, rgba(20,17,64,1) 0%, rgba(18,18,138,1) 19%, rgba(27,119,183,1) 100%);
+    background: rgb(20, 17, 64);
+    background: radial-gradient(circle, rgba(20, 17, 64, 1) 0%, rgba(18, 18, 138, 1) 19%, rgba(27, 119, 183, 1) 100%);
     opacity: 1;
     box-shadow: 0 0 100px black;
-    
+
 }
 
 .form {
@@ -72,7 +72,7 @@ em:hover {
     color: #0047ab;
 }
 
-.regi-btn{
+.regi-btn {
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
@@ -84,3 +84,37 @@ em:hover {
 }
 
 
+@media (max-width : 1250px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        width: 30vw;
+        height: 60vh;
+        box-shadow: 0 0 3px rgb(118, 115, 115);
+        min-width: 300px;
+        margin: 0;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+
+    .form-seg label {
+        font-size: 15px;
+        color: #0047ab;
+    }
+
+    .regi-btn {
+        font-size: 15px;
+        margin-top: 5%;
+    }
+
+    .submit-btn {
+        font-size: 15px;
+    }
+
+    .form h1 {
+        font-weight: 800;
+    }
+}
