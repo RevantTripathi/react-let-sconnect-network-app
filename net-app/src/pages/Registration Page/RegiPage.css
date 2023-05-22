@@ -87,7 +87,7 @@ em:hover {
     background-color: white;
 }
 
-@media (max-width : 1250px) {
+@media (max-width : 450px) {
 
     .form2 {
         display: flex;

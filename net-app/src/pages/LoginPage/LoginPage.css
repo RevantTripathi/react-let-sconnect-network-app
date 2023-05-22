@@ -85,7 +85,7 @@ em:hover {
 }
 
 
-@media (max-width : 1250px) {
+@media (max-width : 650px) {
     .form {
         display: flex;
         flex-direction: column;
@@ -109,7 +109,7 @@ em:hover {
         border: 1px solid #6162638d;
         padding: 1px 5px;
         border-radius: 2px;
-        width: 27vw;
+        width: 30vw;
     }
 
     .regi-btn {
