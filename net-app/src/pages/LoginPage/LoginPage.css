@@ -46,8 +46,9 @@
 
 .form-seg input {
     border: 1px solid #6162638d;
-    padding: 4px 8px;
+    padding: 1px 5px;
     border-radius: 2px;
+    width: 60%;
 }
 
 .submit-btn {
@@ -74,8 +75,8 @@ em:hover {
 
 .regi-btn {
     font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
+    font-weight: 400;
+    padding: 5px 16px;
     border: none;
     border-radius: 5px;
     margin-top: 5%;
@@ -91,7 +92,7 @@ em:hover {
         align-items: center;
         padding: 20px;
         background-color: white;
-        width: 30vw;
+        width: 50vw;
         height: 60vh;
         box-shadow: 0 0 3px rgb(118, 115, 115);
         min-width: 300px;
@@ -103,6 +104,12 @@ em:hover {
     .form-seg label {
         font-size: 15px;
         color: #0047ab;
+    }
+    .form-seg input {
+        border: 1px solid #6162638d;
+        padding: 1px 5px;
+        border-radius: 2px;
+        width: 40%;
     }
 
     .regi-btn {
@@ -118,3 +125,38 @@ em:hover {
         font-weight: 800;
     }
 }
+
+/* @media (max-width : 500px){
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        width: 50vw;
+        height: 60vh;
+        box-shadow: 0 0 3px rgb(118, 115, 115);
+        min-width: 300px;
+        margin: 0;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+
+    .form-seg label {
+        font-size: 10px;
+        color: #0047ab;
+    }
+
+    .regi-btn {
+        font-size: 15px;
+        margin-top: 5%;
+    }
+
+    .submit-btn {
+        font-size: 15px;
+    }
+
+    .form h1 {
+        font-weight: 800;
+    }
+} */
