@@ -52,15 +52,15 @@ const Regi = () => {
             <div className="form-container2">
                 <form className="form2" onSubmit={(e) => handleRegisteration(e)} >
                     <h1>Registartion</h1>
-                    <div className="form-seg2">
+                    <div className="form2-seg2">
                         <label>Name : </label>
                         <input id='name' type='text' name="name" required ref={name} />
                     </div>
-                    <div className="form-seg2">
+                    <div className="form2-seg2">
                         <label>Contact : </label>
                         <input id='contact' type='number' name="contact" required ref={contact} />
                     </div>
-                    <div className="form-seg2">
+                    <div className="form2-seg2">
                         <label>Gender : </label>
                         {/* <input type='text' name="email" /> */}
                         <select id='gender' ref={gender}>
@@ -73,11 +73,11 @@ const Regi = () => {
 
                         </select>
                     </div>
-                    <div className="form-seg2">
+                    <div className="form2-seg2">
                         <label>Email : </label>
                         <input type='email' name="email" id='email' required ref={email} />
                     </div>
-                    <div className="form-seg2">
+                    <div className="form2-seg2">
                         <label>Password : </label>
                         <input type='password' name="password" id="password" required ref={password} />
                     </div>
