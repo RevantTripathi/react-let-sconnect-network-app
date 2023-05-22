@@ -107,11 +107,11 @@ em:hover {
         font-size: 15px;
         color: #0047ab;
     }
-    .form-seg2 input {
+    .form2-seg2 input {
         border: 1px solid #6162638d;
         padding: 1px 5px;
         border-radius: 2px;
-        width: 20%;
+        width: 20vw;
     }
 /* 
     .login-btn2 {
