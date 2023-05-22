@@ -111,7 +111,7 @@ em:hover {
         border: 1px solid #6162638d;
         padding: 1px 5px;
         border-radius: 2px;
-        width: 20vw;
+        width: 35vw;
     }
 /* 
     .login-btn2 {
@@ -125,6 +125,12 @@ em:hover {
 
     .form2 h1 {
         font-weight: 800;
+    }
+    .form2-seg2 select {
+        border: 1px solid #6162638d;
+        padding: 4px 8px;
+        border-radius: 2px;
+        margin-right: 13vw;
     }
 }
 
