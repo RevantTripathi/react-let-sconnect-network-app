@@ -1,7 +1,7 @@
 .user_details_container {
     width: 100%;
     border-radius: 4%;
-    background-color: black;
+    background-color: rgb(231, 230, 230);
     box-shadow: 8px 8px 15px #020202;
     border: 1px solid lightgray;
     height: 20%;
@@ -16,7 +16,7 @@
 }
 
 .user_details_div {
-    padding: 0 10px;
+    padding: 0 6px;
     margin-top: 2px;
     z-index: 10;
     text-align: center;
@@ -51,4 +51,27 @@
 
 .user_details_stats_highlight {
     color: #0047ab;
+}
+
+
+@media(max-width:650px){
+
+
+.user_details_container {
+    width: 22vw;
+}
+
+.user_details_div>p {
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+}
+
+}
+
+@media(max-width:900px) and (min-width:650px){
+    .user_details_container{
+        
+        width: 20vw;
+    }
 }

@@ -22,7 +22,7 @@ function Feed() {
       // const data = await response.json();
       // console.log(data.posts);
       // setPosts(data.posts);
-      let {data}=await axios.get('https://letsconnectbackend-production.up.railway.app/posts')
+      let {data}=await axios.get('http://localhost:4000/posts')
       console.log(data)
       setPosts(data)
     } catch (error) {
@@ -48,8 +48,10 @@ function Feed() {
     //   image: imageUrl,
     //   likeCount:0,
     // });
+
+    //https://letsconnectbackend-production.up.railway.app
     try{
-      await axios.post('https://letsconnectbackend-production.up.railway.app/posts',{user:user.id,data:input,likes:0})
+      await axios.post('http://localhost:4000/posts',{user:user.id,data:input,likes:0})
     }catch(err){
       console.log(err)
     }

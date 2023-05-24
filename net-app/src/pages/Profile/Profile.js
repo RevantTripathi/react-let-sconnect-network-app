@@ -17,7 +17,9 @@ const Profile = ({ setLogin }) => {
             // const data = await response.json();
             // console.log(data.posts);
             // setPosts(data.posts);
-            let { data } = await axios.get('https://letsconnectbackend-production.up.railway.app/posts')
+
+            //https://letsconnectbackend-production.up.railway.app/posts
+            let { data } = await axios.get('http://localhost:4000/posts')
             console.log(data)
             setPosts(data)
         } catch (error) {

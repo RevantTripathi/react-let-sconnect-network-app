@@ -6,6 +6,7 @@
     text-align: left;
     border: 1px solid lightgray;
     box-shadow: 8px 8px 15px #020202;
+
 }
 
 .recents_title{
@@ -21,4 +22,28 @@
 .recents_tags_containe>p{
     font-size: 40%;
 
+}
+
+@media (max-width:650px){
+    .recents_container{
+        width: 22vw;
+       
+        
+    }
+    .recents_tags_container{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:900px) and (min-width:650px){
+
+    .recents_container{
+        width: 20vw;
+       
+        
+    }
+
+    .recents_tags_container{
+        font-size: 12px;
+    }
 }

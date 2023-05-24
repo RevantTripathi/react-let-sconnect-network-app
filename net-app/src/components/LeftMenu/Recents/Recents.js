@@ -14,18 +14,14 @@ const  Recents = () => {
             tag: "programming"
 
         },
+        
         {
             id:3,
-            tag: "softwareengineering"
-
-        },
-        {
-            id:4,
             tag: "design"
 
         },
         {
-            id:5,
+            id:4,
             tag: "developer"
 
         },
