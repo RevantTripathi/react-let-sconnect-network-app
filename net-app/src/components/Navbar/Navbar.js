@@ -10,7 +10,7 @@ function Navbar({setLogin}){
     const navigate =useNavigate();   
     return(
         <>
-        <div className='navbar_container'>
+        {/* <div className='navbar_container'> */}
         <div className='navbar'>
         <div className='navbar_left'>
              <img className="logo_img" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dYFM1O8GbZ52Bc3lQqGXRSOsJrK3RnHbaQ&usqp=CAU'/> 
@@ -26,7 +26,7 @@ function Navbar({setLogin}){
                 {/* <p>DARK MODE</p> */}
                 <button className='logbt' onClick={() => {setLogin(false);navigate("/")}}>LogOut</button>
             </div>
-        </div>
+        {/* </div> */}
         </div>
         </>
 

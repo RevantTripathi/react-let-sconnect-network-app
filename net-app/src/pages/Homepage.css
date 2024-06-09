@@ -27,3 +27,10 @@
         display: block;
     }
 } */
+
+@media (max-width:550px){
+    .homepage_container{
+        display: flex;
+  justify-content: center;
+    }
+}

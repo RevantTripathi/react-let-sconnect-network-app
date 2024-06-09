@@ -1,12 +1,15 @@
-.navbar_container {
+/* .navbar_container {
     position: sticky;
     top: 0;
-    background-color: whitesmoke;
+     background-color: whitesmoke; 
+    background-color: black;
     z-index: 10;
     border: black;
-    border-bottom: 1px solid rgb(188, 184, 184);
+    border-bottom: 2px solid rgb(188, 184, 184);
+    padding-top: 2.2vh;
+    width: 100vw;
     
-}
+} */
 
 .navbar{
     display: flex;
@@ -16,6 +19,7 @@
     /* padding: 1% 10% 5% 10%; */
     /* background-color: rgb(241, 246, 246); */
     background-color: #f5f5f5;
+    width: 100vw;
     
     
 }
@@ -24,21 +28,21 @@
 .navbar_left{
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 40vw;
     
 }
-.navbar_left>p{
+/* .navbar_left>p{
     font-weight: 600;
-    font-size: 25%;
-}
+    font-size: 20%;
+} */
 .navbar_left>img{
     width: 50px;
     padding-left: 28%;
 }
 
 .navbar_left_input{
-    width: 50%;
-    margin-left: 2%;
+    width: 20vw;
+    margin-left: 2vw;
     height: 5vh;
     border: white;
     
@@ -46,7 +50,7 @@
 }
 .navbar_right{
     display: flex;
-    padding-right: 15%;
+    padding-right: 0%;
 
         
 }

@@ -22,7 +22,7 @@ function Feed() {
       // const data = await response.json();
       // console.log(data.posts);
       // setPosts(data.posts);
-      let {data}=await axios.get('http://localhost:4000/posts')
+      let {data}=await axios.get('https://lets-connect-backend.onrender.com/posts')
       console.log(data)
       setPosts(data)
     } catch (error) {
@@ -51,7 +51,7 @@ function Feed() {
 
     //https://letsconnectbackend-production.up.railway.app
     try{
-      await axios.post('http://localhost:4000/posts',{user:user.id,data:input,likes:0})
+      await axios.post('https://lets-connect-backend.onrender.com/posts',{user:user.id,data:input,likes:0})
     }catch(err){
       console.log(err)
     }

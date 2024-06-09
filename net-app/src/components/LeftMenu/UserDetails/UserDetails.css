@@ -75,3 +75,13 @@
         width: 20vw;
     }
 }
+
+
+@media(max-width:550px){
+
+
+    .user_details_container {
+        display: none;
+    }
+    
+    }

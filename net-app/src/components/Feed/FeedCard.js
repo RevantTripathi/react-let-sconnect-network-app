@@ -20,7 +20,8 @@ function FeedCard({ getPosts, id, username, name, message, likeCount }) {
       likeCount-=1
       setIsLiked(false);
       try {
-        await axios.patch('http://localhost:4000/posts', { id: id, likes: likeCount })
+        await axios.patch('https://lets-connect-backend.onrender.com/posts', { id: id, likes: likeCount })
+        //http://localhost:4000/posts
       } catch (err) {
         console.log(err)
       }
@@ -28,9 +29,9 @@ function FeedCard({ getPosts, id, username, name, message, likeCount }) {
     } else {
       likeCount+=1
       setIsLiked(true);
-      //https://letsconnectbackend-production.up.railway.app/posts
+      //https://letsconnectbackend-production.up.railway.app/posts  http://localhost:4000/posts
       try {
-        await axios.patch('http://localhost:4000/posts', { id: id, likes: likeCount  })
+        await axios.patch('https://lets-connect-backend.onrender.com/posts', { id: id, likes: likeCount  })
       } catch (err) {
         console.log(err)
       }

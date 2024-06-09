@@ -31,7 +31,7 @@ const Regi = () => {
 
         //https://letsconnectbackend-production.up.railway.app
         try {
-            axios.post('http://localhost:4000/users', { username: name.current.value, email: email.current.value, contact: contact.current.value, password: password.current.value, gender: gender.current.value }).then((res) => {
+            axios.post('https://lets-connect-backend.onrender.com/users', { username: name.current.value, email: email.current.value, contact: contact.current.value, password: password.current.value, gender: gender.current.value }).then((res) => {
                 console.log(res.data)
                 resetInput()
             })
@@ -58,7 +58,7 @@ const Regi = () => {
                     </div>
                     <div className="form2-seg2">
                         <label>Contact : </label>
-                        <input id='contact' type='number' name="contact" required ref={contact} />
+                        <input id='contact' type='number' name="contact"  required ref={contact} />
                     </div>
                     <div className="form2-seg2">
                         <label>Gender : </label>
